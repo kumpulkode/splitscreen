@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
         topPanel.style.width = x + 'px';
         var getpx = (x / $(document).width())*100;
         range.setPercentage(getpx);
+        // $('.rangeselector').style.left = x +'px';
     });
     // $("#example").click(function () {
         // $('.handle').on('drag', function () {
