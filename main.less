@@ -1,0 +1,121 @@
+/* Reset. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    .panel {
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        .content {
+            position: absolute;
+            width: 100vw;
+            min-height: 45vw;
+            color: #FFF;
+            
+            .description {
+                width: 25%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+
+            img {
+                box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+                width: 35%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+
+}
+
+
+.bottom {
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+    .description {
+        right: 5%;
+    }
+}
+.top {
+    background-color: rgb(77, 69, 173);
+    z-index: 2;
+    transition: all .1s ease-in-out;
+    // width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+    .description {
+        left: 5%;
+    }
+}
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 1px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    transition: all .1s ease-in-out;
+}
+#example{
+    position: absolute;
+    top: 10%;
+    // height: 20px;
+    // background-color: white;
+    width: 100%;
+    z-index: 1000;
+    p{
+        background-color: pink;
+    }
+}
+.rangeslider{
+    height: 0px !important;
+    // overflow: hidden;
+    .rangeouter{
+        display: none;
+    }
+    .rangeinner{
+        display: none;
+    }
+    .rangeselector{
+        left: 75.7448%;
+        position: absolute;
+        transition: all .1s ease-in-out;
+        border: 2px solid white !important;
+        background-color: pink !important;
+        height: 20px !important;
+        width: 20px !important;
+        margin-left: -10px !important;
+    }
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}

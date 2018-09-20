@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="rangeslider.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    
+    <script src="rangeslider.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="splitview">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h1>The original image.</h1>
+                    <p>This is how the image looks like before applying a duotone effect.</p>
+                </div>
+    
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/original-image.jpg" alt="Original">
+            </div>
+        </div>
+    
+        <div class="panel top">
+            <div class="content">
+                <div class="description">
+                    <h1>The duotone image.</h1>
+                    <p>This is how the image looks like after applying a duotone effect.</p>
+                </div>
+    
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/duotone-image.jpg" alt="Duotone">
+            </div>
+        </div>
+    
+        <div class="handle" ontouchmove="myFunction(event)"></div>
+        <div class="boom" id="example">
+        </div>
+    </div>
+</body>
+</html>
