@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
         topPanel = parent.querySelector('.top'),
         handle = parent.querySelector('.handle');
     // Move the handle.
-    handle.style.left = '25%';
+    handle.style.left = '50%';
 
     // Adjust the top panel width.
-    topPanel.style.width = '25%';
+    topPanel.style.width = '50%';
     
 
     // parent.addEventListener('mousemove', function (event) {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // ratio: 1,
         // multiple: 1.3,
         // borderSize: 0,
-        percentage: 25,
+        percentage: 50,
         // fgColour: 'transparent',
         bgColour: 'transparent',
         onDown: function (e, percentage) {

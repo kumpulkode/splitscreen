@@ -24,24 +24,34 @@ body {
         .content {
             position: absolute;
             width: 100vw;
-            min-height: 45vw;
+            min-height: 100vh;
             color: #FFF;
-            
-            .description {
-                width: 25%;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                text-align: center;
-            }
+            // .description {
+            //     width: 25%;
+            //     position: absolute;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     text-align: center;
+            // }
 
-            img {
-                box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
-                width: 35%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            // img {
+            //     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+            //     width: 35%;
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            // }
+            .img-box{
+                height: 400px;
+                width: 400px;
+                max-width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
             }
         }
 
